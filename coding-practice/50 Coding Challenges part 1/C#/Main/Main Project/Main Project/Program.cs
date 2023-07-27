@@ -5,7 +5,7 @@ public class Program
     public static void Main()
     {
         Console.WriteLine("Hello");
-        Problem2 problem2 = new Problem2();
-        problem2.Main();
+        Problem3 problem3 = new Problem3();
+        problem3.Main();
     }
 }
