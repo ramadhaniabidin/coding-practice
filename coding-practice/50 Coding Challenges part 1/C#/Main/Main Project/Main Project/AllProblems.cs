@@ -306,6 +306,31 @@ namespace Main_Project
             Console.WriteLine($"Distinct Array: {string.Join(", ", DistinctArray)}");
         }
 
+        public void Problem28()
+        {
+            //Coding challenge #28: Calculate the sum of first 100 prime numbers
+            int n_prime = 100;
+            int[] array_prime = new int[n_prime];
+            int j = 0;
+            int sum = 0;
+            for (int i = 0; i < n_prime;)
+            {
+                if (methods.is_prime(j) == true)
+                {
+                    array_prime[i] = j;
+                    i++;
+                }
+                j++;
+            }
+            Console.WriteLine("The first " + n_prime + " prime numbers are:");
+            for (int i = 0; i < n_prime; i++)
+            {
+                //Console.WriteLine(array_prime[i]);
+                sum += array_prime[i];
+            }
+
+            Console.WriteLine($"The sum of the first 100 prime numbers is: {sum}");
+        }
     }
 
 }
