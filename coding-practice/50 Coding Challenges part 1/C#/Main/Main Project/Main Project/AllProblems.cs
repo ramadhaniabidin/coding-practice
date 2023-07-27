@@ -8,338 +8,7 @@ namespace Main_Project
 {
     public class AllProblems
     {
-        static float celsius_to_fahrenheit(float celsius)
-        {
-            float fahrenheit = ((celsius * 1.8f) + 32f);
-            return fahrenheit;
-        }
-
-        static float fahrenheit_to_celsius(float fahrenheit)
-        {
-            float celsius = (fahrenheit - 32f) / 1.8f;
-            return celsius;
-        }
-
-        static int sum_array(int[] array)
-        {
-            int sum = 0;
-            for (int i = 0; i < array.Length; i++)
-            {
-                sum += array[i];
-            }
-            return sum;
-        }
-
-        static float average_array(int[] array)
-        {
-            float sum = 0f;
-            for (int i = 0; i < array.Length; i++)
-            {
-                sum += array[i];
-            }
-            return sum / array.Length;
-        }
-
-        static int[] positive_array(int[] input)
-        {
-            int sum_positives = 0;
-            for (int i = 0; i < input.Length; i++)
-            {
-                if (input[i] > 0)
-                {
-                    sum_positives++;
-                }
-            }
-            int[] output = new int[sum_positives];
-            int j = 0;
-            for (int i = 0; i < sum_positives;)
-            {
-                if (input[j] > 0)
-                {
-                    output[i] = j;
-                    i++;
-                }
-                j++;
-            }
-            return output;
-
-        }
-
-        static int find_max(int[] input)
-        {
-            int max = input[0];
-            for (int i = 1; i < input.Length; i++)
-            {
-                if (input[i] > max)
-                {
-                    max = input[i];
-                }
-            }
-            return max;
-        }
-
-        static void print_fibonacci(int n_fibonacci)
-        {
-            int f0 = 0;
-            Console.Write(f0 + " ");
-            int f1 = 1;
-            Console.Write(f1 + " ");
-
-            for (int i = 2; i < n_fibonacci; i++)
-            {
-                int fi = f1 + f0;
-                Console.Write(fi + " ");
-                f0 = f1;
-                f1 = fi;
-            }
-        }
-
-        static int fibonacci(int n_fibonacci)
-        {
-            if (n_fibonacci == 0)
-            {
-                return 0;
-            }
-            else if (n_fibonacci == 1)
-            {
-                return 1;
-            }
-            return (fibonacci(n_fibonacci - 1) + fibonacci(n_fibonacci - 2));
-        }
-
-        static bool is_prime(int number)
-        {
-            if (number < 2)
-            {
-                return false;
-            }
-
-            else if (number == 2)
-            {
-                return true;
-            }
-
-            int max_div = (int)Math.Sqrt(number);
-            for (int i = 2; i <= max_div; i++)
-            {
-                if (number % i == 0)
-                {
-                    return false;
-                }
-            }
-            return true;
-
-        }
-
-        static int sum_digits(int number)
-        {
-            int sum = 0;
-            while (number > 0)
-            {
-                int increment = number % 10; // get the last digit of number by taking the remainder when dividing by 10
-                sum += increment; // add increment to the sum
-                number = number / 10;
-            }
-            return sum;
-        }
-
-        static int[] array_prime(int nPrimes, int startAt)
-        {
-            int[] output = new int[nPrimes];
-            int j = 0;
-            for (int i = 0; i < nPrimes;)
-            {
-                if ((is_prime(j) == true) && (j > startAt))
-                {
-                    output[i] = j;
-                    i++;
-                }
-                j++;
-            }
-            return output;
-        }
-
-        static int[] rotate_array(int[] input_array)
-        {
-            int[] output = new int[input_array.Length];
-            output[0] = input_array[input_array.Length - 1];
-            for (int i = 1; i < input_array.Length; i++)
-            {
-                output[i] = input_array[i - 1];
-            }
-            return output;
-        }
-
-        static int[] rotate_right(int[] input)
-        {
-            int[] output = new int[input.Length];
-            for (int i = 0; i < input.Length - 1; i++)
-            {
-                output[i] = input[i + 1];
-            }
-            output[input.Length - 1] = input[0];
-            return output;
-        }
-
-        static int[] reverse_array(int[] input)
-        {
-            int len = input.Length;
-            int[] output = new int[len];
-            for (int i = 0; i < len; i++)
-            {
-                output[i] = input[(len - i) - 1];
-            }
-
-            return output;
-        }
-
-        static string reverse_string(string input)
-        {
-            int len = input.Length;
-            StringBuilder output = new StringBuilder(len);
-            for (int i = 0; i < len; i++)
-            {
-                output.Append(input[(len - 1) - i]);
-            }
-            return output.ToString();
-        }
-
-        static int[] merge_array(int[] array1, int[] array2)
-        {
-            int len1 = array1.Length;
-            int len2 = array2.Length;
-            int len = len1 + len2;
-            int[] output = new int[len];
-            int j = 0;
-
-            for (int i = 0; i < len1; i++)
-            {
-                output[i] = array1[i];
-            }
-
-            for (int i = len1; i < len;)
-            {
-                output[i] = array2[j];
-                i++;
-                j++;
-            }
-
-            return output;
-        }
-
-        static int[] exclusive_array(int[] array1, int[] array2)
-        {
-            int[] output = new int[array1.Length + array2.Length];
-            int count = 0;
-            for (int i = 0; i < array1.Length; i++)
-            {
-                bool found = false;
-                for (int j = 0; j < array2.Length; j++)
-                {
-                    if (array1[i] == array2[j])
-                    {
-                        found = true;
-                        break;
-                    }
-                }
-                if (!found)
-                {
-                    output[count] = array1[i];
-                    count++;
-                }
-
-            }
-
-            for (int i = 0; i < array2.Length; i++)
-            {
-                bool found = false;
-                for (int j = 0; j < array1.Length; j++)
-                {
-                    if (array2[i] == array1[j])
-                    {
-                        found = true;
-                        break;
-                    }
-                }
-                if (!found)
-                {
-                    output[count] = array2[i];
-                    count++;
-                }
-            }
-
-            Array.Resize(ref output, count);
-            return output;
-        }
-
-        static int[] ExclusiveArray(int[] array1, int[] array2, string array_to_keep)
-        {
-            int duplicates_count = 0;
-
-            for (int i = 0; i < array1.Length; i++)
-            {
-                for (int j = 0; j < array2.Length; j++)
-                {
-                    if (array1[i] == array2[j])
-                    {
-                        duplicates_count++;
-                    }
-                }
-            }
-
-
-            int k = 0;
-            if (array_to_keep == "Array1")
-            {
-                int[] output = new int[array1.Length - duplicates_count];
-                for (int i = 0; i < array1.Length; i++)
-                {
-                    bool duplicate_founded = false;
-                    for (int j = 0; j < array2.Length; j++)
-                    {
-                        if (array1[i] == array2[j])
-                        {
-                            duplicate_founded = true;
-                            break;
-                        }
-                    }
-
-                    if (!duplicate_founded)
-                    {
-                        //int[] output = new int[array1.Length - duplicates_count];
-                        output[k] = array1[i];
-                        k++;
-                    }
-
-                }
-                return output;
-            }
-
-            else
-            {
-                int[] output = new int[array2.Length - duplicates_count];
-                for (int i = 0; i < array2.Length; i++)
-                {
-                    bool duplicate_founded = false;
-                    for (int j = 0; j < array1.Length; j++)
-                    {
-                        if (array2[i] == array1[j])
-                        {
-                            duplicate_founded = true;
-                            break;
-                        }
-                    }
-
-                    if (!duplicate_founded)
-                    {
-                        //int[] output = new int[array2.Length - duplicates_count];
-                        output[k] = array2[i];
-                        k++;
-                    }
-                }
-                return output;
-            }
-        }
+        HelpingMethods methods = new HelpingMethods();
 
         public void Problem1()
         {
@@ -429,28 +98,28 @@ namespace Main_Project
         {
             // coding challenge 8 : create a function that converts from Celsius to Fahrenheit
             float celsius = 37.5f;
-            Console.Write($"{celsius} Celsius is equal to {celsius_to_fahrenheit(celsius)} Fahrenheit");
+            Console.Write($"{celsius} Celsius is equal to {methods.celsius_to_fahrenheit(celsius)} Fahrenheit");
         }
 
         public void Problem9()
         {
             // coding challenge 9 : create a function that converts from Fahrenheit to Celsius
             float fahrenheit = 40f;
-            Console.WriteLine($"{fahrenheit} Fahrenheit is equal to {fahrenheit_to_celsius(fahrenheit)} Celsius");
+            Console.WriteLine($"{fahrenheit} Fahrenheit is equal to {methods.fahrenheit_to_celsius(fahrenheit)} Celsius");
         }
 
         public void Problem10()
         {
             // coding challenge 10 : calculate the sum of numbers in an array of numbers
             int[] myArray = { 2, 3, -1, 5, 7, 9, 10, 15, 95 };
-            Console.Write($"The sum of all elements in myArray is {sum_array(myArray)}");
+            Console.Write($"The sum of all elements in myArray is {methods.sum_array(myArray)}");
         }
 
         public void Problem11()
         {
             // coding challenges 11 : calculate the average of the numbers in an array of numbers
             int[] array = { 1, 3, 9, 15, 90 };
-            float average = average_array(array);
+            float average = methods.average_array(array);
             Console.Write("The average of this array is " + average);
         }
 
@@ -469,7 +138,7 @@ namespace Main_Project
             }
 
             int[] output = new int[sum_positives];
-            output = positive_array(array);
+            output = methods.positive_array(array);
             Console.Write("The array with its positive elemnts only [" + string.Join(", ", output) + "]");
         }
 
@@ -477,7 +146,7 @@ namespace Main_Project
         {
             // coding challenge 13 : find the maximum numbers in an array of numbers
             int[] input = { -5, 10, -3, 12, 9, 10, -1, -2, -4, 6 };
-            int max = find_max(input);
+            int max = methods.find_max(input);
             Console.Write("The maximum number in [" + string.Join(", ", input) + "] is " + max);
         }
 
@@ -485,7 +154,7 @@ namespace Main_Project
         {
             // coding challenge 14 : print the first 10 Fibonacci numbers without using recursion
             int n_fibonacci = 10;
-            print_fibonacci(n_fibonacci);
+            methods.print_fibonacci(n_fibonacci);
         }
 
         public void Problem15()
@@ -495,7 +164,7 @@ namespace Main_Project
             int[] fibonacci_array = new int[n_fibonacci];
             for (int i = 0; i < n_fibonacci; i++)
             {
-                fibonacci_array[i] = fibonacci(i);
+                fibonacci_array[i] = methods.fibonacci(i);
             }
             Console.Write("The first " + n_fibonacci + " numbers are [" + string.Join(", ", fibonacci_array) + "]");
         }
@@ -506,7 +175,7 @@ namespace Main_Project
             int[] numbers = { 1, 8, 3, 4, 19, 21, 23, 45 };
             for (int i = 0; i < numbers.Length; i++)
             {
-                Console.WriteLine("Is " + numbers[i] + " prime? : " + is_prime(numbers[i]));
+                Console.WriteLine("Is " + numbers[i] + " prime? : " + methods.is_prime(numbers[i]));
             }
         }
 
@@ -514,7 +183,7 @@ namespace Main_Project
         {
             // coding challenge 17 : calculate the sum of digits of a positive integer number
             int number = 123;
-            int sum = sum_digits(number);
+            int sum = methods.sum_digits(number);
             Console.Write("The sum of every digits in " + number + " is " + sum);
         }
 
@@ -526,7 +195,7 @@ namespace Main_Project
             int j = 0;
             for (int i = 0; i < n_prime;)
             {
-                if (is_prime(j) == true)
+                if (methods.is_prime(j) == true)
                 {
                     array_prime[i] = j;
                     i++;
@@ -546,7 +215,7 @@ namespace Main_Project
             int nPrimes = 5;
             int startAt = 5;
             int[] array = new int[nPrimes];
-            array = array_prime(nPrimes, startAt);
+            array = methods.array_prime(nPrimes, startAt);
             Console.Write("The first " + nPrimes + " prime numbers after " + startAt + " are: [" + string.Join(", ", array) + "]");
         }
 
@@ -555,7 +224,7 @@ namespace Main_Project
             // coding challenge 20 : Rotate an array to the left 1 position
             int[] array = { 1, 2, 3, 4, 5 };
             int[] rotated_array = new int[array.Length];
-            rotated_array = rotate_array(array);
+            rotated_array = methods.rotate_array(array);
             Console.Write("The rotated version of [" + string.Join(", ", array) + "] is : [" + string.Join(", ", rotated_array) + "]");
         }
 
@@ -564,7 +233,7 @@ namespace Main_Project
             // Coding challenge #21 : Rotate an array to the right 1 position
             int[] array = { 1, 2, 3, 4, 5 };
             int[] output = new int[array.Length];
-            output = rotate_right(array);
+            output = methods.rotate_right(array);
             Console.Write("The rotated version of [" + String.Join(", ", array) + "] is : [" + String.Join(", ", output) + "]");
         }
 
@@ -573,7 +242,7 @@ namespace Main_Project
             // Coding challenge #22 : Reverse an array
             int[] array = { 1, 2, 3, 4, 5, 6 };
             int[] reversed = new int[array.Length];
-            reversed = reverse_array(array);
+            reversed = methods.reverse_array(array);
             Console.Write("The reversed version of [" + string.Join(", ", array) + "] is: [" + string.Join(", ", reversed) + "]");
         }
 
@@ -581,7 +250,7 @@ namespace Main_Project
         {
             // Coding challenge #23 : Reverse a string
             string word = "Ramadhani";
-            string reversed_word = reverse_string(word);
+            string reversed_word = methods.reverse_string(word);
             Console.Write("The reversed version of " + word + " is : " + reversed_word);
         }
 
@@ -592,7 +261,7 @@ namespace Main_Project
             int[] array2 = { 4, 5, 6 };
             int[] merge = new int[array1.Length + array2.Length];
 
-            merge = merge_array(array1, array2);
+            merge = methods.merge_array(array1, array2);
             Console.Write("The merged array of [" + string.Join(", ", array1) + "] and [" + string.Join(", ", array2) + "] is [" + string.Join(", ", merge) + "]");
         }
 
@@ -604,7 +273,7 @@ namespace Main_Project
             in the first array or second array but not in both */
             int[] array1 = { 1, 2, 3, 10, 5, 3, 14 };
             int[] array2 = { 1, 4, 5, 6, 14 };
-            int[] exclusive = exclusive_array(array1, array2);
+            int[] exclusive = methods.exclusive_array(array1, array2);
             Console.Write(string.Join(", ", exclusive));
         }
 
@@ -617,7 +286,7 @@ namespace Main_Project
             */
             int[] array1 = { 1, 2, 3, 10, 5, 3, 14 };
             int[] array2 = { -1, 4, 5, 6, 14 };
-            int[] exclusive = ExclusiveArray(array1, array2, array_to_keep: "Array2");
+            int[] exclusive = methods.ExclusiveArray(array1, array2, array_to_keep: "Array2");
             Console.WriteLine($"Array 1: {string.Join(", ", array1)}");
             Console.WriteLine($"Array 2: {string.Join(", ", array2)}");
             Console.Write("Exclusive array: "+string.Join(", ", exclusive));
