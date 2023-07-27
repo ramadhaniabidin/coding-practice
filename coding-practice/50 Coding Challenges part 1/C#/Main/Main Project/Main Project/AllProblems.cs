@@ -292,6 +292,19 @@ namespace Main_Project
             Console.Write("Exclusive array: "+string.Join(", ", exclusive));
         }
 
+        public void Problem27()
+        {
+            /*
+            Coding challenge #27
+            Create a function that will receive an array of
+            numbers as argument and will return a new
+            array with distinct elements
+            */
+
+            int[] array = { 1, 2, 3, 4, 4, 1, 4, 4 };
+            var DistinctArray = methods.DistinctArray(array);
+            Console.WriteLine($"Distinct Array: {string.Join(", ", DistinctArray)}");
+        }
 
     }
 

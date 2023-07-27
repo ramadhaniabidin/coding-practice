@@ -8,6 +8,7 @@ namespace Main_Project
 {
     public class HelpingMethods
     {
+
         public float celsius_to_fahrenheit(float celsius)
         {
             float fahrenheit = ((celsius * 1.8f) + 32f);
@@ -339,6 +340,30 @@ namespace Main_Project
                 }
                 return output;
             }
+        }
+
+        public int[] DistinctArray(int[] array)
+        {
+            Dictionary<int, int> keyValues = new();
+            List<int> keys = new();
+            foreach (int i in array)
+            {
+                if (keyValues.ContainsKey(i))
+                {
+                    keyValues[i]++;
+                }
+                else
+                {
+                    keyValues[i] = 1;
+                }
+            }
+
+            foreach(KeyValuePair<int, int> pair in keyValues)
+            {
+                keys.Add(pair.Key);
+            }
+
+            return keys.ToArray();
         }
     }
 }
