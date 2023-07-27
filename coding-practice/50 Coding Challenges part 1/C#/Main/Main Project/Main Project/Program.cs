@@ -7,6 +7,6 @@ public class Program
     {
         Console.WriteLine("Hello");
         AllProblems problems = new AllProblems();
-        problems.Problem28();
+        problems.Problem29();
     }
 }
