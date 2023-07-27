@@ -1,0 +1,15 @@
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\50 Coding Challenges part 1\C#\Main\Main Project\Main Project\bin\Debug\net6.0\Main Project.exe
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\50 Coding Challenges part 1\C#\Main\Main Project\Main Project\bin\Debug\net6.0\Main Project.deps.json
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\50 Coding Challenges part 1\C#\Main\Main Project\Main Project\bin\Debug\net6.0\Main Project.runtimeconfig.json
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\50 Coding Challenges part 1\C#\Main\Main Project\Main Project\bin\Debug\net6.0\Main Project.dll
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\50 Coding Challenges part 1\C#\Main\Main Project\Main Project\bin\Debug\net6.0\Main Project.pdb
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\50 Coding Challenges part 1\C#\Main\Main Project\Main Project\obj\Debug\net6.0\Main Project.csproj.AssemblyReference.cache
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\50 Coding Challenges part 1\C#\Main\Main Project\Main Project\obj\Debug\net6.0\Main Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\50 Coding Challenges part 1\C#\Main\Main Project\Main Project\obj\Debug\net6.0\Main Project.AssemblyInfoInputs.cache
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\50 Coding Challenges part 1\C#\Main\Main Project\Main Project\obj\Debug\net6.0\Main Project.AssemblyInfo.cs
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\50 Coding Challenges part 1\C#\Main\Main Project\Main Project\obj\Debug\net6.0\Main Project.csproj.CoreCompileInputs.cache
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\50 Coding Challenges part 1\C#\Main\Main Project\Main Project\obj\Debug\net6.0\Main Project.dll
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\50 Coding Challenges part 1\C#\Main\Main Project\Main Project\obj\Debug\net6.0\refint\Main Project.dll
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\50 Coding Challenges part 1\C#\Main\Main Project\Main Project\obj\Debug\net6.0\Main Project.pdb
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\50 Coding Challenges part 1\C#\Main\Main Project\Main Project\obj\Debug\net6.0\Main Project.genruntimeconfig.cache
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\50 Coding Challenges part 1\C#\Main\Main Project\Main Project\obj\Debug\net6.0\ref\Main Project.dll
