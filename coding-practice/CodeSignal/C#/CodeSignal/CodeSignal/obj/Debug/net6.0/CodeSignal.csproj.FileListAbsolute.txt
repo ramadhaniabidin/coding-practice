@@ -1,0 +1,15 @@
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\CodeSignal\C#\CodeSignal\CodeSignal\bin\Debug\net6.0\CodeSignal.exe
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\CodeSignal\C#\CodeSignal\CodeSignal\bin\Debug\net6.0\CodeSignal.deps.json
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\CodeSignal\C#\CodeSignal\CodeSignal\bin\Debug\net6.0\CodeSignal.runtimeconfig.json
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\CodeSignal\C#\CodeSignal\CodeSignal\bin\Debug\net6.0\CodeSignal.dll
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\CodeSignal\C#\CodeSignal\CodeSignal\bin\Debug\net6.0\CodeSignal.pdb
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\CodeSignal\C#\CodeSignal\CodeSignal\obj\Debug\net6.0\CodeSignal.csproj.AssemblyReference.cache
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\CodeSignal\C#\CodeSignal\CodeSignal\obj\Debug\net6.0\CodeSignal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\CodeSignal\C#\CodeSignal\CodeSignal\obj\Debug\net6.0\CodeSignal.AssemblyInfoInputs.cache
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\CodeSignal\C#\CodeSignal\CodeSignal\obj\Debug\net6.0\CodeSignal.AssemblyInfo.cs
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\CodeSignal\C#\CodeSignal\CodeSignal\obj\Debug\net6.0\CodeSignal.csproj.CoreCompileInputs.cache
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\CodeSignal\C#\CodeSignal\CodeSignal\obj\Debug\net6.0\CodeSignal.dll
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\CodeSignal\C#\CodeSignal\CodeSignal\obj\Debug\net6.0\refint\CodeSignal.dll
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\CodeSignal\C#\CodeSignal\CodeSignal\obj\Debug\net6.0\CodeSignal.pdb
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\CodeSignal\C#\CodeSignal\CodeSignal\obj\Debug\net6.0\CodeSignal.genruntimeconfig.cache
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\CodeSignal\C#\CodeSignal\CodeSignal\obj\Debug\net6.0\ref\CodeSignal.dll
