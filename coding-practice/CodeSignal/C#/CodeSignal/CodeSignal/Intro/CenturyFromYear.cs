@@ -10,26 +10,8 @@ namespace CodeSignal.Intro
     {
         public int Solution(int year)
         {
-            int mod = year % 100;
-            int century;
-
-            if (mod == 0)
-            {
-                century = (int)Math.Round((double)year / 100);
-                return century;
-            }
-
-            else if (mod >= 50)
-            {
-                century = (int)Math.Round((double)year / 100);
-                return century;
-            }
-
-            else
-            {
-                century = (int)(Math.Round((double)year / 100) + 1);
-                return century;
-            }
+            int century = (year + 99) / 100;
+            return century;
         }
     }
 }
