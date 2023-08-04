@@ -50,5 +50,17 @@ namespace CodeSignal
             return Area;
         }
 
+
+        public int MakeArrayConsecutive2(int[] nums)
+        {
+            Array.Sort(nums);
+            List<int> list = new();
+            for(int i = nums.Min(); i <= nums.Max(); i++)
+            {
+                list.Add(nums[i]);
+            }
+
+            return (list.Count - nums.Length);
+        }
     }
 }
