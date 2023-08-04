@@ -1,11 +1,17 @@
-﻿public class Program
+﻿using CodeSignal;
+using System.Linq;
+using System.Text;
+
+public class Program
 {
+
     public static void Main()
     {
         Console.WriteLine("Hello");
-        int year = 1940;
-        int mod = year % 100;
-        int century = (year + 99) / 100;
-        Console.WriteLine($"Year {year} is on the {century}th century");
+        int[] array = { -23, 4, -3, 8, -12 };
+        HelpingMethods methods = new HelpingMethods();
+        int max = methods.AdjacentSum(array);
+        Console.WriteLine($"Maximum product: {max}");   
     }
+
 }
