@@ -44,5 +44,11 @@ namespace CodeSignal
             return MaxProduct;
         }
 
+        public int ShapeArea(int n)
+        {
+            int Area = n * n + (n - 1) * (n - 1);
+            return Area;
+        }
+
     }
 }
