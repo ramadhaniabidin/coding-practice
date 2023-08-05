@@ -62,5 +62,38 @@ namespace CodeSignal
 
             return (list.Count - nums.Length);
         }
+
+        public bool AlmostIncreasingSequence(int[] sequence)
+        {
+            int found = 0;
+            for(int i = 0; i < sequence.Length; i++)
+            {
+                if((i + 1) < sequence.Length)
+                {
+                    if (sequence[i + 1] <= sequence[i])
+                    {
+                        found++;
+                    }
+                }
+            }
+
+            if(found > 1)
+            {
+                return false;
+            }
+
+            for(int i = 1; i < sequence.Length; i++)
+            {
+                if ((i + 2) < sequence.Length)
+                {
+                    if ((sequence[i + 2] <= sequence[i]) && (sequence[i + 1] <= sequence[i - 1]))
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            return true;
+        }
     }
 }
