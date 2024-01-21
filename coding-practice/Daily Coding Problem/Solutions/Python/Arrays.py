@@ -11,19 +11,18 @@ class Arrays:
         print((myList[-1]))
 
      # This is my answer
-    def ProductList(self):
+    def ProductList(self, nums):
         myList = [1, 2, 3, 4]
         calculatedValue = 1
         returnedList = []
-        for i in myList:
-            for j in myList:
+        for i in nums:
+            for j in nums:
                 if(i != j):
                     calculatedValue *= j
             returnedList.append(calculatedValue)
             calculatedValue = 1
-
-        returnedList.sort()
-        print(returnedList)
+        return returnedList
+        # print(returnedList)
 
     ## This is the answer from the book
     def products(self, nums):
@@ -60,11 +59,16 @@ class Arrays:
             else:
                 result.append(prefix_products[i - 1] * suffix_products[i + 1])
             
-        print(f'Prefix products = {prefix_products}')
-        print(f'Suffix products = ', suffix_products)
-        print(result)
+        # print(f'Prefix products = {prefix_products}')
+        # print(f'Suffix products = ', suffix_products)
+        # print(result)
+        return result
     
-
+nums = [1, 2, 3, 4, 5]
 myObject = Arrays()
-# myObject.ProductList()
-myObject.products([1, 2, 3, 4])
+
+myAnswer = myObject.ProductList(nums)
+bookAnswer = myObject.products([1, 2, 3, 4, 5])
+
+print(f'My Answer: {myAnswer}')
+print(f'Book\'s Answer: {bookAnswer}')
