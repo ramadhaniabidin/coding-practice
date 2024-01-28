@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Daily Coding Problem\Solutions\C#\DailyCodingProblems\DailyCodingProblems.csproj" />
+  </ItemGroup>
+
 </Project>

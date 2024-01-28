@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "CodeSignal/1.0.0": {
+        "dependencies": {
+          "DailyCodingProblems": "1.0.0"
+        },
         "runtime": {
           "CodeSignal.dll": {}
+        }
+      },
+      "DailyCodingProblems/1.0.0": {
+        "runtime": {
+          "DailyCodingProblems.dll": {}
         }
       }
     }
   },
   "libraries": {
     "CodeSignal/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DailyCodingProblems/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -13,3 +13,6 @@ C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\CodeSi
 C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\CodeSignal\C#\CodeSignal\CodeSignal\obj\Debug\net6.0\CodeSignal.pdb
 C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\CodeSignal\C#\CodeSignal\CodeSignal\obj\Debug\net6.0\CodeSignal.genruntimeconfig.cache
 C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\CodeSignal\C#\CodeSignal\CodeSignal\obj\Debug\net6.0\ref\CodeSignal.dll
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\CodeSignal\C#\CodeSignal\CodeSignal\bin\Debug\net6.0\DailyCodingProblems.dll
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\CodeSignal\C#\CodeSignal\CodeSignal\bin\Debug\net6.0\DailyCodingProblems.pdb
+C:\Users\ramad\OneDrive\Documents\Belajar\Coding Practice\coding-practice\CodeSignal\C#\CodeSignal\CodeSignal\obj\Debug\net6.0\CodeSignal.csproj.CopyComplete
