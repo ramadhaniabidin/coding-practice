@@ -17,6 +17,57 @@ public:
 		static int outputArray[2] = {1, 2};
 		return outputArray;
 	}
+
+	void product(int inputArray[4])
+	{
+		int calculatedValue = 1;
+		int productArray[4] = {0, 0, 0, 0};
+		for (int i = 0; i < 4; i++)
+		{
+			
+			for (int j = 3; j >= 0; j--)
+			{
+				
+				if (i != j)
+				{
+					calculatedValue *= inputArray[j];
+				}
+				
+			}
+			productArray[i] = calculatedValue;
+			calculatedValue = 1;
+		}
+
+		cout << "The original array: " << endl;
+		cout << "[";
+		for (int i = 0; i < 4; i++)
+		{
+			if (i != 3)
+			{
+				cout << inputArray[i] << ", ";
+			}
+			else
+			{
+				cout << inputArray[i] << "";
+			}
+		}
+		cout << "]" << endl;
+
+		cout << "\nThe product array: " << endl;
+		cout << "[";
+		for (int i = 0; i < 4; i++)
+		{
+			if (i != 3)
+			{
+				cout << productArray[i] << ", ";
+			}
+			else
+			{
+				cout << productArray[i] << "";
+			}
+		}
+		cout << "]" << endl;
+	}
 	// void myProductAnswer(int input[5]){
 	// 	for(i = 0; i < 5; i++){
 
@@ -27,22 +78,9 @@ public:
 int main()
 {
 	Arrays myObject;
-	int *myArray = myObject.returningArray();
-	// myObject.hello();
-	cout << "[";
-	for (int i = 0; i < 2; i++)
-	{
-		/* code */
-		if (i != 1)
-		{
-			cout << myArray[i] << ", ";
-		}
-		else
-		{
-			cout << myArray[i] << "";
-		}
-	}
-	cout << "]";
+
+	int input[4] = {1, 2, 3, 4};
+	myObject.product(input);
 
 	return 0;
 }
