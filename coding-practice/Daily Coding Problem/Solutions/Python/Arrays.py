@@ -13,6 +13,29 @@ class MySolution:
             calculatedValue = 1
         return returnedList
     
+class MaximumSubArraySum:
+    def __init__(self, arr):
+        self.array = arr
+
+    def max_subarray_sum(self):
+        max_ending_here = max_so_far = 0
+        for x in self.array:
+            max_ending_here = max(x, max_ending_here + x)
+            max_so_far = max(max_so_far, max_ending_here)
+        return max_so_far
+    
+    def min_subbarray_sum(self):
+        min_ending_here = min_so_far = 0
+        for x in self.array:
+            min_ending_here = min(x, min_ending_here + x)
+            min_so_far = min(min_so_far, min_ending_here)
+        return min_so_far
+    
+    def maximum_circular_subbarray(self):
+        max_subarray_sum_wraparround = sum(self.array) - self.min_subbarray_sum()
+        return max(self.max_subarray_sum(), max_subarray_sum_wraparround)
+        
+    
 class BookSolution:
     def __init__(self) -> None:
         pass
@@ -60,13 +83,15 @@ class BookSolution:
         return max_so_far
 
 nums = [1, 2, 3, 4, 5]
-arr = [34, -50, 42, 14, -5, 86]
+arr = [8, -1, 3, 4]
 myObject = MySolution()
 bookObject = BookSolution()
+maxSubArraySum = MaximumSubArraySum(arr)
 
 myAnswer = myObject.products(nums)
 bookAnswer = bookObject.products(nums)
 
 # print(f'My Answer: {myAnswer}')
 # print(f'Book\'s Answer: {bookAnswer}')
-print(f'Maximum sub array sum: {bookObject.max_subarray_sum([8, -1, 3, 4])}')
+print(f'Maximum sub array sum: {maxSubArraySum.max_subarray_sum()}')
+print(f'Maximum sub array sum wrap around: {maxSubArraySum.maximum_circular_subbarray()}')
