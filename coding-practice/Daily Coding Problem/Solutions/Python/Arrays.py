@@ -91,7 +91,5 @@ maxSubArraySum = MaximumSubArraySum(arr)
 myAnswer = myObject.products(nums)
 bookAnswer = bookObject.products(nums)
 
-# print(f'My Answer: {myAnswer}')
-# print(f'Book\'s Answer: {bookAnswer}')
 print(f'Maximum sub array sum: {maxSubArraySum.max_subarray_sum()}')
 print(f'Maximum sub array sum wrap around: {maxSubArraySum.maximum_circular_subbarray()}')
