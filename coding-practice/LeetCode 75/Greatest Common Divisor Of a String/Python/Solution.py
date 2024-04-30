@@ -41,11 +41,27 @@ class Solution:
         return output
 
 
-  
+class ChatGPTSolution:
+    def __init__(self, str1, str2):
+        self.str1 = str1
+        self.str2 = str2
+
+    def gcd(self, a, b):
+        while b:
+            a, b = b, a % b
+        return a
+    
+    def gcdOfStrings(self):
+        if self.str1 + self.str2 != self.str2 + self.str1:
+            return ''
+        len1, len2 = len(self.str1), len(self.str2)
+        gcd_len = self.gcd(a=len1, b=len2)
+        return self.str1[:gcd_len]
 
 str1 = 'ABCABC'
 str2 = 'ABC'
 solution = Solution(str1, str2)
-common_divisor = solution.greatest_common_divisor()
+chatgpt_solution = ChatGPTSolution(str1, str2)
+common_divisor = chatgpt_solution.gcdOfStrings()
 print(common_divisor)
     
