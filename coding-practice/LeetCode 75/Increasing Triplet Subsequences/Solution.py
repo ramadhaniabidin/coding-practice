@@ -8,6 +8,7 @@ class Solution:
         
         min_so_far = float('inf')
         second_min_so_far = float('inf')
+        third = float('inf')
 
         for num in nums:
             if num <= min_so_far:
@@ -15,6 +16,8 @@ class Solution:
             elif num <= second_min_so_far:
                 second_min_so_far = num
             else:
+                third = num
+                print(min_so_far, second_min_so_far, third)
                 return True
             
         return False
