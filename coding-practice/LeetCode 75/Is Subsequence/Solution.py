@@ -1,5 +1,7 @@
 class Solution:
-    def isSubsequence(s: str, t: str) -> bool:
+    def __init__(self) -> None:
+        pass
+    def isSubsequence(self, s: str, t: str) -> bool:
         if len(s) == 0:
             return True
         
@@ -10,3 +12,6 @@ class Solution:
                 if s_index == len(s):
                     return True
         return False
+    
+solution = Solution()
+print(solution.isSubsequence('acb', "ahbgdc"))
