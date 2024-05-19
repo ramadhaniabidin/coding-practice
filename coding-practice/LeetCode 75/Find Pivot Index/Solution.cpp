@@ -50,7 +50,14 @@ int main(){
 	int arr[] = {1,7,3,6,5,6};
 	vector<int> vec(arr, arr + sizeof(arr) / sizeof(int));
 	
-	cout << "Pivot index: "<<sol.findPivotIndex(vec);
+	cout << "Pivot index of {";
+	for (int i = 0; i < vec.size(); i++){
+		cout << vec[i];
+		if (i != vec.size() - 1){
+			cout<<", ";
+		}
+	}
+	cout << "} is: " << sol.findPivotIndex(vec);
 	
 	return 0;
 }
