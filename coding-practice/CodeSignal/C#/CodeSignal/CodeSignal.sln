@@ -4,8 +4,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeSignal", "CodeSignal\CodeSignal.csproj", "{621D11FE-B08F-4B66-8D27-CD540E272BA8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1215D2D7-822D-4CBE-A1E5-289315FB26B5} = {1215D2D7-822D-4CBE-A1E5-289315FB26B5}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyCodingProblems", "..\..\..\Daily Coding Problem\Solutions\C#\DailyCodingProblems\DailyCodingProblems.csproj", "{C564E0AD-6EE2-414A-97B9-24E15F6B78B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DailyCodingProblems", "..\..\..\Daily Coding Problem\Solutions\C#\DailyCodingProblems\DailyCodingProblems.csproj", "{C564E0AD-6EE2-414A-97B9-24E15F6B78B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode", "LeetCode\LeetCode.csproj", "{1215D2D7-822D-4CBE-A1E5-289315FB26B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,10 @@ Global
 		{C564E0AD-6EE2-414A-97B9-24E15F6B78B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C564E0AD-6EE2-414A-97B9-24E15F6B78B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C564E0AD-6EE2-414A-97B9-24E15F6B78B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1215D2D7-822D-4CBE-A1E5-289315FB26B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1215D2D7-822D-4CBE-A1E5-289315FB26B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1215D2D7-822D-4CBE-A1E5-289315FB26B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1215D2D7-822D-4CBE-A1E5-289315FB26B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

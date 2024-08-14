@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "CodeSignal/1.0.0": {
         "dependencies": {
-          "DailyCodingProblems": "1.0.0"
+          "DailyCodingProblems": "1.0.0",
+          "LeetCode": "1.0.0"
         },
         "runtime": {
           "CodeSignal.dll": {}
@@ -17,6 +18,11 @@
       "DailyCodingProblems/1.0.0": {
         "runtime": {
           "DailyCodingProblems.dll": {}
+        }
+      },
+      "LeetCode/1.0.0": {
+        "runtime": {
+          "LeetCode.dll": {}
         }
       }
     }
@@ -28,6 +34,11 @@
       "sha512": ""
     },
     "DailyCodingProblems/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LeetCode/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

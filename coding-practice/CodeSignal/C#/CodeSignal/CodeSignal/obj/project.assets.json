@@ -11,6 +11,16 @@
         "runtime": {
           "bin/placeholder/DailyCodingProblems.dll": {}
         }
+      },
+      "LeetCode/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/LeetCode.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LeetCode.dll": {}
+        }
       }
     }
   },
@@ -19,11 +29,17 @@
       "type": "project",
       "path": "../../../../Daily Coding Problem/Solutions/C#/DailyCodingProblems/DailyCodingProblems.csproj",
       "msbuildProject": "../../../../Daily Coding Problem/Solutions/C#/DailyCodingProblems/DailyCodingProblems.csproj"
+    },
+    "LeetCode/1.0.0": {
+      "type": "project",
+      "path": "../LeetCode/LeetCode.csproj",
+      "msbuildProject": "../LeetCode/LeetCode.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "DailyCodingProblems >= 1.0.0"
+      "DailyCodingProblems >= 1.0.0",
+      "LeetCode >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -53,6 +69,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\ramad\\OneDrive\\Documents\\Belajar\\Coding Practice\\coding-practice\\CodeSignal\\C#\\CodeSignal\\LeetCode\\LeetCode.csproj": {
+              "projectPath": "C:\\Users\\ramad\\OneDrive\\Documents\\Belajar\\Coding Practice\\coding-practice\\CodeSignal\\C#\\CodeSignal\\LeetCode\\LeetCode.csproj"
+            },
             "C:\\Users\\ramad\\OneDrive\\Documents\\Belajar\\Coding Practice\\coding-practice\\Daily Coding Problem\\Solutions\\C#\\DailyCodingProblems\\DailyCodingProblems.csproj": {
               "projectPath": "C:\\Users\\ramad\\OneDrive\\Documents\\Belajar\\Coding Practice\\coding-practice\\Daily Coding Problem\\Solutions\\C#\\DailyCodingProblems\\DailyCodingProblems.csproj"
             }

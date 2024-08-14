@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\Daily Coding Problem\Solutions\C#\DailyCodingProblems\DailyCodingProblems.csproj" />
+    <ProjectReference Include="..\LeetCode\LeetCode.csproj" />
   </ItemGroup>
 
 </Project>
