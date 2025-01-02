@@ -1,6 +1,8 @@
 #include<iostream>
 #include<cmath>
 #include<vector>
+#include<sstream>
+
 using namespace std;
 
 class Solution{
@@ -30,10 +32,18 @@ class Solution{
 			
 			return prefix;	
 		};
+		
+		void
 };
 
+vector<string> split(const string&, char delimiter){
+	vector<string> tokens;
+	string token;
+	istringStream tokenStream()
+};
 
 int main(){
+	/*
 	Solution obj;
 	string arr_words[] = {"flower","flow","flight"};
 	vector<string> words(arr_words, arr_words + sizeof(arr_words) / sizeof(string));
@@ -49,6 +59,11 @@ int main(){
 		}
 	}
 	cout << "} is " << longestPrefix << endl;
+	*/
+	
+	string input_string = "apple,banana,cherry";
+	char delimiter = ',';
+	vector<string> result = 
 	return 0;
 }
 
